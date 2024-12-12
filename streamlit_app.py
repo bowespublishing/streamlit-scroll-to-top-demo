@@ -1,5 +1,6 @@
 import streamlit as st
-from scroll_component import scroll_to_here
+from streamlit_scroll_to_top import scroll_to_here
+
 
 # Step 1: Initialize scroll state in session_state
 if 'scroll_to_top' not in st.session_state:
@@ -19,8 +20,6 @@ def scroll():
     
 def scrollheader():
     st.session_state.scroll_to_header = True
-
-st.header("Streamlit scroll to demo")
 
 # Step 4: Add some dummy content to simulate a long page
 st.title("Dummy Content")
